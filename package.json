@@ -1,0 +1,32 @@
+{
+  "name": "example_protractor",
+  "version": "1.0.0",
+  "description": "This test has been created for demonstration",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "tsc",
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "devDependencies": {
+    "protractor": "^5.2.2",
+    "typescript": "^2.6.2",
+    "webdriver-manager": "^12.0.6",
+    "@types/node": "^9.3.0",
+    "@types/async": "^2.0.47",
+    "@types/jasmine": "^2.8.4",
+    "@types/jasminewd2": "^2.0.3",
+    "@types/protractor-browser-logs": "^1.0.5",
+    "@types/protractor-http-mock": "^0.0.34",
+    "jasmine-spec-reporter": "^4.2.1"
+  },
+  "keywords": [
+    "protractor",
+    "typescript"
+  ],
+  "author": "Nikita Gerasimenko",
+  "license": "ISC"
+}

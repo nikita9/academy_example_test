@@ -3,7 +3,7 @@ import {SpecReporter} from "jasmine-spec-reporter";
 
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['spec.test.page.js'],
+    specs: ['spec.homepage.navmenu.js'],
 
     // Framework to use. Jasmine is recommended.
     framework: 'jasmine',

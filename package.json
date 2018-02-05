@@ -21,7 +21,8 @@
     "@types/jasminewd2": "^2.0.3",
     "@types/protractor-browser-logs": "^1.0.5",
     "@types/protractor-http-mock": "^0.0.34",
-    "jasmine-spec-reporter": "^4.2.1"
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor-element-extend": "^2.1.0"
   },
   "keywords": [
     "protractor",

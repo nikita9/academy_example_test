@@ -53,7 +53,7 @@ describe('Given the Homepage', () => {
         });
 
         it('then the following page should exist', async () => {
-            const title = await element(by.css('.widget-title'));
+            const title = await element(by.css('h2.widget-title'));
 
             return expect(title.getText()).toContain('Need to develop, test or design something?');
         })

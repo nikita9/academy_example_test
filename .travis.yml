@@ -9,7 +9,7 @@ before_install:
 
 before_script:
   - npm install
-  - npm pretest
+  - npm run pretest
   - npm test
   - mkdir -p $LOGS_DIR
   - ./scripts/travis_setup.sh

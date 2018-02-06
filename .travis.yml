@@ -1,19 +1,15 @@
 language: node_js
-sudo: false
+sudo: required
 node_js:
   - "8"
   - "9"
-
-before_install:
-  - g++-4.8 --version
-
-before_script:
-  - npm install
-  - npm run pretest
-  - npm test
-  - mkdir -p $LOGS_DIR
-  - ./scripts/travis_setup.sh
   
+install:
+  - npm install
+  
+before_script:
+  - webdriver-manager update && webdriver-manager start
+  - npm run pretest
+
 script:
-  - ./scripts/testserver.sh
-  - ./scripts/test_on_travis.sh
+  - npm test

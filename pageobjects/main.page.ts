@@ -16,10 +16,8 @@ export class MainPage {
     }
 
     public async waitForComponentsVisible(): Promise<void> {
-        await Promise.all([
-            this.waitForMain(),
-            this.navigationmenu.waitForVisible()
-        ]);
+        await this.waitForMain();
+        await this.navigationmenu.waitForVisible();
     }
 
     private async waitForMain(): Promise<void> {

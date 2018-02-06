@@ -8,8 +8,8 @@ before_install:
   - g++-4.8 --version
 
 before_script:
-  - npm run install
-  - npm run pretest
+  - npm install
+  - npm pretest
   - npm test
   - mkdir -p $LOGS_DIR
   - ./scripts/travis_setup.sh

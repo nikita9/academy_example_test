@@ -22,7 +22,8 @@
     "@types/protractor-browser-logs": "^1.0.5",
     "@types/protractor-http-mock": "^0.0.34",
     "jasmine-spec-reporter": "^4.2.1",
-    "protractor-element-extend": "^2.1.0"
+    "protractor-element-extend": "^2.1.0",
+    "selenium-standalone": "^6.12.0"
   },
   "keywords": [
     "protractor",

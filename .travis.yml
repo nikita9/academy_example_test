@@ -1,0 +1,10 @@
+language: node_js
+sudo: required
+node_js:
+  - "9"
+instal:
+  - npm install
+before_script:
+  - npm run pretest
+script:
+  - npm run protractor-run

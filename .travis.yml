@@ -5,8 +5,7 @@ node_js:
 install:
   - npm install
 before_script:
-  - webdriver-manager update
-  - nohup webdriver-manager start --detach
+  - webdriver-manager update & webdriver-manager start
   - npm run pretest
 script:
   - npm test

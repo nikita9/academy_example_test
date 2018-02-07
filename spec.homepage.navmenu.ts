@@ -15,8 +15,8 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
             });
 
             it('then the following page should exist', async () => {
-                await expect(mainPage.navigationmenu.waitForVisible());
-                return expect(mainPage.title.getText()).toContain('About Us');
+                await mainPage.navigationmenu.waitForVisible();
+                expect(await mainPage.title.getText()).toContain('About Us');
             })
         });
 
@@ -26,8 +26,8 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
             });
 
             it('then the following page should exist', async () => {
-                await expect(mainPage.navigationmenu.waitForVisible());
-                return expect(mainPage.title.getText()).toContain('Services');
+                await mainPage.navigationmenu.waitForVisible();
+                expect(await mainPage.title.getText()).toContain('Services');
             })
         });
 
@@ -37,9 +37,9 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
             });
 
             it('then the following page should exist', async () => {
-                await expect(mainPage.navigationmenu.waitForVisible());
-                await expect(mainPage.navigationmenu.waitForClickable());
-                return expect(mainPage.title.getText()).toContain('Clients');
+                await mainPage.navigationmenu.waitForVisible();
+                await mainPage.navigationmenu.waitForClickable();
+                expect(await mainPage.title.getText()).toContain('Clients');
             })
         });
 
@@ -49,8 +49,8 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
             });
 
             it('then the following page should exist', async () => {
-                await expect(mainPage.navigationmenu.waitForVisible());
-                return expect(mainPage.titleHome.getText()).toContain('Need to develop, test or design something?');
+                await mainPage.navigationmenu.waitForVisible();
+                expect(await mainPage.titleHome.getText()).toContain('Need to develop, test or design something?');
             });
         });
     });

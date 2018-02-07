@@ -23,6 +23,6 @@ describe('given google searchpage', () => {
 
         let todoList = element.all(by.css('#ires'));
         //expect(todoList.count()).toEqual(3);
-        expect(todoList.get(2).getText()).toEqual('Selenium — Википедия');
+        expect(await todoList.get(2).getText()).toEqual('Selenium — Википедия');
     });
 });

@@ -14,11 +14,10 @@
   },
   "devDependencies": {
     "protractor": "^5.2.2",
-    "typescript": "2.6.2",
+    "typescript": "^2.7.1",
     "@types/node": "^9.3.0",
     "@types/async": "^2.0.47",
     "@types/jasmine": "^2.8.4",
-    "@types/jasminewd2": "^2.0.3",
     "@types/protractor-browser-logs": "^1.0.5",
     "@types/protractor-http-mock": "^0.0.34",
     "jasmine-spec-reporter": "^4.2.1",

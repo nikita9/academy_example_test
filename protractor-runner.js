@@ -1,5 +1,5 @@
-import {selenium} from "selenium-standalone"
-import {spawn} from "child_process";
+const spawn = require ('child_process');
+const selenium = require('selenium-standalone');
 
 selenium.install({
     version: '2.47.0',

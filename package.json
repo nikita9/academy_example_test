@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "tsc",
+    "protractor-run": "node ./protractor-runner.js",
     "test": "protractor conf.js"
   },
   "repository": {

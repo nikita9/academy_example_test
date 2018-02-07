@@ -6,7 +6,7 @@ install:
   - npm install
 before_script:
   - webdriver-manager update
-  - webdriver-manager start --detach
+  - ssh -Xn webdriver-manager start --detach
   - npm run pretest
 script:
   - npm test

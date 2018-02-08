@@ -50,7 +50,7 @@ selenium.install({
                 }
                 console.log('Selenium started successfully');
 
-                const child = spawn('npm run test-- --env "chrome-headless"',{
+                const child = spawn('npm run test -- --env "chrome-headless"',{
                     stdio: 'inherit',
                     stdin: 'inherit',
                     shell: true

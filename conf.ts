@@ -3,10 +3,18 @@ import {SpecReporter} from "jasmine-spec-reporter";
 
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['spec.test.page.js'],
+    specs: ['spec.homepage.navmenu.js'],
+
+    capabilities: {
+        browserName: 'chrome',
+
+        chromeOptions: {
+            args: [ "--headless", "--disable-gpu"]
+        }
+    },
 
     // Framework to use. Jasmine is recommended.
-    framework: 'jasmine',
+    framework: 'jasmine2',
 
     // Spec patterns are relative to the current working directory when
 

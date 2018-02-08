@@ -52,7 +52,7 @@ selenium.install({
 
                 const child = spawn('npm run test-- --env "chrome-headless"',{
                     stdio: 'inherit',
-                   stdin: 'inherit',
+                    stdin: 'inherit',
                     shell: true
                 });
 

@@ -50,7 +50,7 @@ selenium.install({
                 }
                 console.log('Selenium started successfully');
 
-                const child = spawn('npm run test --headless --disable-gpu',{
+                const child = spawn('npm run test-- --headless --disable-gpu',{
                     stdio: 'inherit',
                    stdin: 'inherit',
                     shell: true

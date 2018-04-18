@@ -16,7 +16,7 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
 
             it('then the following page should exist', async () => {
                 await mainPage.navigationmenu.waitForVisible();
-                expect(await mainPage.title.getText()).toContain('About Us');
+                expect(await mainPage.title.getText()).toContain('Boxwood Studio');
             })
         });
 
@@ -27,7 +27,7 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
 
             it('then the following page should exist', async () => {
                 await mainPage.navigationmenu.waitForVisible();
-                expect(await mainPage.title.getText()).toContain('Services');
+                expect(await mainPage.title.getText()).toContain('Boxwood Studio');
             })
         });
 
@@ -39,7 +39,7 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
             it('then the following page should exist', async () => {
                 await mainPage.navigationmenu.waitForVisible();
                 await mainPage.navigationmenu.waitForClickable();
-                expect(await mainPage.title.getText()).toContain('Clients');
+                expect(await mainPage.title.getText()).toContain('Boxwood Studio');
             })
         });
 
@@ -50,7 +50,7 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
 
             it('then the following page should exist', async () => {
                 await mainPage.navigationmenu.waitForVisible();
-                expect(await mainPage.titleHome.getText()).toContain('Need to develop, test or design something?');
+                expect(await mainPage.titleHome.getText()).toContain('Boxwood Studio');
             });
         });
     });

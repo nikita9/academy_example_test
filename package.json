@@ -23,7 +23,8 @@
     "@types/protractor-http-mock": "^0.0.34",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor-element-extend": "^2.1.0",
-    "selenium-standalone": "^6.12.0"
+    "selenium-standalone": "^6.14.0",
+    "agent-js-jasmine": "^3.0.0"
   },
   "keywords": [
     "protractor",

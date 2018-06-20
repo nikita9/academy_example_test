@@ -11,10 +11,10 @@ export class NavigationMenu extends Fragment {
 
     constructor(navigationMenu: ElementFinder) {
         super(navigationMenu);
-        this.home = new Fragment(this.$('#menu-item-170'));
-        this.aboutUs = new Fragment(this.$('#menu-item-172'));
-        this.services = new Fragment(this.$('#menu-item-169'));
-        this.clients = new Fragment(this.$('#menu-item-167 '));
+        this.home = new Fragment(this.$('#onetone-home'));
+        this.aboutUs = new Fragment(this.$('#onetone-about'));
+        this.services = new Fragment(this.$('#onetone-services'));
+        this.clients = new Fragment(this.$('#onetone-gallery'));
     }
 
     public async openHome(): Promise<void> {

@@ -1,5 +1,5 @@
-import {BaseFragment} from 'protractor-element-extend'
-import {WaitConditions} from "./wait-conditions";
+import { BaseFragment } from 'protractor-element-extend'
+import { WaitConditions } from "./wait-conditions";
 
 export class Fragment extends BaseFragment {
 

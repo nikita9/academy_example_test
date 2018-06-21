@@ -1,5 +1,5 @@
-import {browser} from "protractor";
-import {SpecReporter} from "jasmine-spec-reporter";
+import { browser } from "protractor";
+import { SpecReporter } from "jasmine-spec-reporter";
 
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',

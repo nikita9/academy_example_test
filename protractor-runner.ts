@@ -1,11 +1,13 @@
-const {spawn} = require ('child_process');
+import { spawn } from 'child_process';
 const selenium = require('selenium-standalone');
 
+//version: 2.47.0 supports moveTo and IE
+//version chrome: 2.33 supports most of functions
 selenium.install({
-        version: '2.47.0',
+        version: '3.8.1',
         drivers: {
             chrome: {
-                version: '2.33',
+                version: '2.39',
                 arch: process.arch,
                 baseURL: 'https://chromedriver.storage.googleapis.com'
             },
@@ -24,12 +26,12 @@ selenium.install({
         selenium.start({
                 // check for more recent versions of selenium here:
                 // https://selenium-release.storage.googleapis.com/index.html
-                version: '2.47.0',
+                version: '3.8.1',
                 drivers: {
                     chrome: {
                         // check for more recent versions of chrome driver here:
                         // https://chromedriver.storage.googleapis.com/index.html
-                        version: '2.33',
+                        version: '2.39',
                         arch: process.arch,
                         baseURL: 'https://chromedriver.storage.googleapis.com'
                     },
@@ -50,11 +52,11 @@ selenium.install({
                 }
                 console.log('Selenium started successfully');
 
-                const child = spawn('npm run test',{
-                    stdio: 'inherit',
-                    stdin: 'inherit',
-                    shell: true
-                });
+                const child = spawn('npm run test',[
+                    'stdio: inherit',
+                    'stdin: inherit',
+                    'shell: true'
+                ]);
 
                 child.on('exit', (code) => process.exit(code));
             });

@@ -13,8 +13,8 @@ describe('angularjs homepage todo list', () => {
        expect(await todoList.get(2).getText()).toEqual('write first protractor test');
 
        // You wrote your first test, cross it off the list
-        todoList.get(2).element(by.css('input')).click();
-        let completedAmount = element.all(by.css('.done-true'));
-        expect(await completedAmount.count()).toEqual(2);
+       //  todoList.get(2).element(by.css('input')).click();
+       //  let completedAmount = element.all(by.css('.done-true'));
+       //  expect(await completedAmount.count()).toEqual(2);
     });
 });

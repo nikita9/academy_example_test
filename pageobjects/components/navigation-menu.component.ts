@@ -1,7 +1,5 @@
-import {ElementFinder} from 'protractor';
+import { ElementFinder } from 'protractor';
 import { Fragment } from '../../utils/base-fragment.wrapper';
-import {Locators} from "../../utils/entites-locators";
-
 
 export class NavigationMenu extends Fragment {
     public readonly home: Fragment;

@@ -1,8 +1,18 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"]
+    },
     "module": "commonjs",
     "target": "es6",
-    "sourceMap": true
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationDir": "dist/declarations",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true
   },
   "exclude": [
     "node_modules"

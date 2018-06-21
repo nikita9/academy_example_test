@@ -1,5 +1,5 @@
-import {browser, ElementFinder, ExpectedConditions as EC, $} from "protractor";
-import {Constants} from "./constants";
+import { browser, ElementFinder, ExpectedConditions as EC } from "protractor";
+import { Constants } from "./constants";
 
 export class WaitConditions {
     public static async clickable(element: ElementFinder): Promise<void> {

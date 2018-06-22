@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["./src/*"]
+      "@*": ["./*"]
     },
     "module": "commonjs",
     "target": "es6",
@@ -13,8 +13,5 @@
     "declarationDir": "dist/declarations",
     "noUnusedParameters": true,
     "noUnusedLocals": true
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }

@@ -1,6 +1,6 @@
-import { $ } from "protractor";
-import { NavigationMenu } from "./components/navigation-menu.component";
-import { Fragment } from "../utils/base-fragment.wrapper";
+import { $ } from 'protractor';
+import { NavigationMenu } from './components/navigation-menu.component';
+import { Fragment } from '@utils/base-fragment.wrapper';
 
 export class MainPage {
     public readonly navigationMenu: NavigationMenu;

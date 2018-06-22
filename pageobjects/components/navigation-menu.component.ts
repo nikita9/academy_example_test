@@ -1,5 +1,5 @@
 import { ElementFinder } from 'protractor';
-import { Fragment } from '../../utils/base-fragment.wrapper';
+import { Fragment } from '@utils/base-fragment.wrapper';
 
 export class NavigationMenu extends Fragment {
     public readonly home: Fragment;

@@ -11,7 +11,7 @@
     "test": "./node_modules/.bin/protractor ./dist/conf.js",
     "test:ci": "npm run protractor-runner",
     "protractor-runner": "node ./dist/protractor-runner.js",
-    "lint": "tslint './**/*.ts' '*/**/*.ts'"
+    "lint": "tslint 'pageobjects/**/*.ts' 'utils/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "protractor-element-extend": "^2.1.0",
     "selenium-standalone": "^6.15.1",
     "tslint": "^5.9.1",
-    "tslint-eslint-rules": "^4.1.1"
+    "tslint-eslint-rules": "^4.1.1",
+    "tspath": "^1.2.10"
   },
   "keywords": [
     "protractor",

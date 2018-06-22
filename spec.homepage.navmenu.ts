@@ -1,5 +1,5 @@
-import { MainPage } from "./pageobjects/main.page";
-import { browser } from "protractor";
+import { MainPage } from '@pageobjects/main.page';
+import { browser } from 'protractor';
 
 const mainPage: MainPage = new MainPage();
 

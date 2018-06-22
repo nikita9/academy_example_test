@@ -1,4 +1,4 @@
-import {browser, by, element} from "protractor";
+import { browser, by, element } from 'protractor';
 
 
 describe('angularjs homepage todo list', () => {

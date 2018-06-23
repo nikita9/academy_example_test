@@ -12,7 +12,6 @@ export class WaitConditions {
         await browser.wait(
             EC.visibilityOf(element),
             Constants.waitPreset.waitCondition.defaultTimeout,
-            `${element.locator()} was expected to be visible`
-        );
+            `${element.locator()} was expected to be visible`);
     }
 }

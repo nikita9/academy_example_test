@@ -1,5 +1,5 @@
-import { MainPage } from 'pageobjects/main.page';
 import { browser } from 'protractor';
+import { MainPage } from './pageobjects/main.page';
 
 const mainPage: MainPage = new MainPage();
 
@@ -17,7 +17,7 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
             it('then the following page should exist', async () => {
                 await mainPage.navigationMenu.waitForVisible();
                 expect(await mainPage.title.getText()).toContain('About Us');
-            })
+            });
         });
 
         describe('when clicks on "Service"', ()  => {
@@ -28,7 +28,7 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
             it('then the following page should exist', async () => {
                 await mainPage.navigationMenu.waitForVisible();
                 expect(await mainPage.title.getText()).toContain('Services');
-            })
+            });
         });
 
         describe('when clicks on "Clients"', ()  => {
@@ -40,7 +40,7 @@ describe('Check if pages exist by clicking on the items in Navigation Menu', () 
                 await mainPage.navigationMenu.waitForVisible();
                 await mainPage.navigationMenu.waitForClickable();
                 expect(await mainPage.title.getText()).toContain('Clients');
-            })
+            });
         });
 
         describe('when clicks on "Home"', ()  => {

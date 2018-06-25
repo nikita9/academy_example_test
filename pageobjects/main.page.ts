@@ -1,5 +1,5 @@
 import { $ } from 'protractor';
-import { Fragment } from 'utils/base-fragment.wrapper';
+import { Fragment } from '../utils/base-fragment.wrapper';
 import { NavigationMenu } from './components/navigation-menu.component';
 
 export class MainPage {

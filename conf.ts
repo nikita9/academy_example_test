@@ -1,5 +1,6 @@
-import { browser } from "protractor";
-import { SpecReporter } from "jasmine-spec-reporter";
+/* tslint:disable */
+import { SpecReporter } from 'jasmine-spec-reporter';
+import { browser } from 'protractor';
 
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
@@ -8,8 +9,8 @@ exports.config = {
     capabilities: {
         browserName: 'chrome',
         chromeOptions: {
-            args: [ "--headless", "--disable-gpu", "--disableChecks"]
-        }
+            args: [ '--headless', '--disable-gpu', '--disableChecks'],
+        },
     },
 
     // Framework to use. Jasmine is recommended.
@@ -21,7 +22,7 @@ exports.config = {
     jasmineNodeOpts: {
         defaultTimeoutInterval: 30000,
         showColors: true,
-        print: function() {}
+        print: function() {},
     },
 
     SELENIUM_PROMISE_MANAGER: false,
@@ -30,8 +31,8 @@ exports.config = {
         browser.waitForAngularEnabled(false);
         jasmine.getEnv().addReporter(new SpecReporter({
             spec: {
-                displayStacktrace: true
-            }
+                displayStacktrace: true,
+            },
         }));
     },
 };

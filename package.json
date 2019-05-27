@@ -26,7 +26,7 @@
     "protractor-element-extend": "^2.1.0",
     "selenium-standalone": "^6.15.1",
     "tslint": "^5.9.1",
-    "tslint-eslint-rules": "^4.1.1",
+    "tslint-eslint-rules": "^5.4.0",
     "tspath": "^1.2.10"
   },
   "keywords": [

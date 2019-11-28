@@ -24,7 +24,7 @@
     "@types/jasmine": "^2.8.8",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor-element-extend": "^2.1.0",
-    "selenium-standalone": "^6.15.1",
+    "selenium-standalone": "^6.17.0",
     "tslint": "^5.9.1",
     "tslint-eslint-rules": "^4.1.1",
     "tspath": "^1.2.10"

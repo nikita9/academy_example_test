@@ -21,7 +21,7 @@
     "protractor": "^5.3.2",
     "typescript": "^2.9.2",
     "@types/node": "^10.3.4",
-    "@types/jasmine": "^2.8.8",
+    "@types/jasmine": "^3.5.13",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor-element-extend": "^2.1.0",
     "selenium-standalone": "^6.15.1",
